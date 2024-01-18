@@ -34,7 +34,7 @@ export const getMenuById = async(req, res )=>{
     try{
         
         const menu = await Menuitem.find({_id:req?.params?.id});
-        console.log("menu = ",menu);
+        
         return res.status(200).json(menu);
 
     }catch(error)
